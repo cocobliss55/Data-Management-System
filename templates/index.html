@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .btn {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Data Management System</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 15px;">
+            Welcome! Use this system to input and view user data.
+        </p>
+        
+        <div style="text-align: center; background-color: #e9ecef; padding: 10px; border-radius: 5px; margin-bottom: 30px;">
+            <strong>Current Malaysia Time: {{ current_time }}</strong>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="/add_data" class="btn">➕ Add New Data</a>
+            <a href="/view_data" class="btn btn-secondary">👁️ View Database</a>
+        </div>
+    </div>
+</body>
+</html>
